@@ -14,13 +14,6 @@ export default function App() {
   }
 
   function toggleCheckbox(todo) {
-    // let newtodo={...todo,checked}
-    // setTodos(
-    //   todos.map((item) =>
-    //     item.task == todo.task ? { ...item, checked: !item.checked } : item
-    //   )
-    // );
-
     setTodos(todos.filter((item) => item.id != todo.id));
     setCompletedTask([...completedTask, todo]);
   }
